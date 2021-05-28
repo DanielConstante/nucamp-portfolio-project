@@ -27,7 +27,7 @@ h2 {
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    font-family:'Spartan', sans-serif;;
+    font-family:'BioRhyme', sans-serif;;
     font-size: 3em;
     color:  #16F1D4;
     /*color:#66fcf1;*/
@@ -61,7 +61,9 @@ h2 {
      color: #16F1D4;
  }
 
- /* navbar styling*/
+ /*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
  .navbar {
     transition: all 0.4s;
 }
@@ -126,22 +128,27 @@ h2 {
     color: #16F1D4;
 }  
 
-/* end navbar */
-
-/*  About Section */
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+p {
+  color: white;
+    text-align: justify;
+}
 
 .about {
-    height: 45vh;
+    
     color: white;
     
 }
 
 #aboutPic {
- width: 250px;
- margin-left: auto;
+ width: 340px;
+ height: 420px;
+
 }
 
-#about, #contact {
+#about, #contact, #resume, #portfolio {
     display: block;
     height:100%;
     width:100%;
@@ -149,9 +156,10 @@ h2 {
     padding-left: 120px;
     box-sizing:border-box;
 }
-/* end about */
 
-/* contact */
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
 
 label {
     color: white;
@@ -166,9 +174,9 @@ label:hover, .info:hover,
 .form {
 
     width:540px;
-    height:490px;
+    height:620px;
     border-radius:8px;
-    box-shadow:0 0 55px -10px #000;
+    box-shadow:0 0 55px -10px #16F1D4;
     margin:calc(35vh - 220px) auto;
     padding:20px 30px;
     max-width:calc(90vw - 40px);
@@ -182,6 +190,114 @@ label:hover, .info:hover,
     text-align: center;
 }
 
-.info, .email, .phone {
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 110px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+h3 {
+    text-align: center;
     color: white;
 }
+
+h3:hover {
+    color: #16F1D4;
+}
+
+a {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume {
+color: white;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #16F1D4;
+    border: 2px solid #16F1D4;
+  }
+
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #16F1D4;
+    position: relative;
+  }
+
+  .resume .resume-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:  #16F1D4;
+  }
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item h5 {
+    font-size: 16px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  /*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+  #words, #smile, #number {
+    border-color: #16F1D4;
+    color: #16F1D4;
+    align-items: center;
+}
+

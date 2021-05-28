@@ -44,25 +44,28 @@ $(document).ready(function () {
   
     var settings = {
       entries: entries,
-      width: 640,
-      height: 480,
-      radius: '65%',
+      width: 1940,
+      height: 1080,
+      radius: '45%',
       radiusMin: 75,
       bgDraw: true,
-      bgColor: 'white',
+      bgColor: 'black',
       opacityOver: 1.00,
       opacityOut: 0.05,
       opacitySpeed: 6,
       fov: 800,
       speed: 1,
-      fontFamily: 'Oswald, Arial, sans-serif',
-      fontSize: '15',
-      fontColor: '#00FFFF',
-      fontWeight: 'normal', //bold
-      fontStyle: 'normal', //italic 
+      fontFamily: 'BioRhyme',
+      fontSize: '20',
+      fontColor: '#16F1D4',
+      fontWeight: 'bold', //bold
+      fontStyle: 'BioRhyme', //italic 
       fontStretch: 'normal', //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
       fontToUpperCase: true };
   
     //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
     $('#tag-cloud').svg3DTagCloud(settings);
   });
+
+
+
