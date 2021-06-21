@@ -1,7 +1,6 @@
 {
   "name": "portfolio-project",
   "version": "1.0.0",
-  "description": "this will be my repo for my nucamp portfolio project",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,7 +17,12 @@
     "url": "https://github.com/DanielConstante/nucamp-portfolio-project/issues"
   },
   "homepage": "https://github.com/DanielConstante/nucamp-portfolio-project#readme",
+  "description": "",
   "devDependencies": {
+    "bootstrap": "4.5",
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
   }
 }

@@ -49,6 +49,7 @@ h2 {
 
       width: 300px;
       height: auto;
+      
   }
   IMG.displayed {
     display: block;
@@ -184,10 +185,11 @@ label:hover, .info:hover,
     position: relative;
 }
 
-#btn {
+#message {
     border-color: #16F1D4;
     color: #16F1D4;
     text-align: center;
+    
 }
 
 
@@ -295,9 +297,22 @@ color: white;
 # Portfolio
 --------------------------------------------------------------*/
 
-  #words, #smile, #number {
+  #words, #smile, #number, #personal {
     border-color: #16F1D4;
-    color: #16F1D4;
+    color: white;
     align-items: center;
+   
 }
 
+#words:hover, #smile:hover,
+#number:hover, #personal:hover {
+  color: #16F1D4;
+}
+
+.site-footer {
+  background-image: linear-gradient(#16F1D4, black);
+  padding: 20px 0; }
+
+ #phoneF, #mailF {
+   color: white;
+ } 
