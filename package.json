@@ -7,9 +7,10 @@
     "start": "npm run lite",
     "lite": "lite-server",
     "clean": "rimraf dist",
-    "build": "npm run clean && npm run imagemin && npm run copyfonts",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "imagemin": "imagemin img/* -o dist/img",
-    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts"
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "usemin": "usemin matching-game.html -d dist --htmlmin -o dist/matching-game.html && usemin words.html -d dist --htmlmin -o dist/words.html && usemin index.html -d dist --htmlmin -o dist/index.html"
   },
   "repository": {
     "type": "git",
