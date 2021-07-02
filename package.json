@@ -5,13 +5,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lite",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DanielConstante/nucamp-portfolio-project.git"
   },
-  "author": "",
+  "author": "Daniel Constante",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DanielConstante/nucamp-portfolio-project/issues"
@@ -19,10 +23,18 @@
   "homepage": "https://github.com/DanielConstante/nucamp-portfolio-project#readme",
   "description": "",
   "devDependencies": {
-    "bootstrap": "4.5",
-    "lite-server": "^2.6.1"
+    "bootstrap": "^4.5.0",
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.5.4",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3"
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   }
 }
