@@ -1,1 +1,131 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Matching Game</title><style>h1{text-align:center}body{background-color:wheat}span{background-color:#ff0}p{text-align:center;font-size:30px}Img{position:absolute}div{position:absolute;width:500px;height:500px}#rightSide{width:50%;left:50%;border-left:2px solid}#restartButton{background-color:wheat}</style></head><body onload="generateFaces()"><h1><span>Matching - Game</span></h1><p><em>Click on the extra smilling face on the left.</em><br><span id="restartButton"></span></p><div id="leftSide"></div><div id="rightSide"></div><script>let numberOfFaces=5;const theLeftSide=document.getElementById("leftSide"),theRightSide=document.getElementById("rightSide");let numTries=0;function generateFaces(){for(let e=0;e<numberOfFaces;e++){let e=document.createElement("img");e.src="../img/smile.png";var t=Math.floor(400*Math.random())+1,n=Math.floor(400*Math.random())+1;e.style.top=t+"px",e.style.left=n+"px",theLeftSide.appendChild(e)}const e=theLeftSide.cloneNode(!0);e.removeChild(e.lastChild),theRightSide.appendChild(e),theLeftSide.lastChild.addEventListener("click",nextLevel),document.body.addEventListener("click",gameOver)}function nextLevel(){for(event.stopPropagation(),numberOfFaces+=5;theLeftSide.firstChild;)theLeftSide.removeChild(theLeftSide.lastChild);for(;theRightSide.firstChild;)theRightSide.removeChild(theRightSide.lastChild);generateFaces("click"),numTries+=1}function gameOver(){alert("GameOver\n\nYou have completed "+numTries+" tries."),document.body.removeEventListener("click",gameOver),theLeftSide.lastChild.removeEventListener("click",nextLevel);let e=document.createElement("button");e.innerHTML="Restart Game",document.querySelector("#restartButton").appendChild(e),e.addEventListener("click",reload),e.addEventListener("mouseover",function(e){e.target.style.backgroundColor="yellow",e.target.style.color="green"}),e.addEventListener("mouseleave",function(e){e.target.style.backgroundColor="",e.target.style.color=""})}function reload(){location.reload()}</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            background-color: wheat;
+        }
+        
+        span {
+            background-color: yellow;
+        }
+
+
+        p {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        Img {
+            position: absolute;
+
+        }
+
+        div {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+
+        }
+
+        #rightSide {
+            width: 50%;
+            left: 50%;
+            border-left: 2px solid;
+
+        }
+        #restartButton {
+       background-color:wheat ;
+        }
+       
+    </style>
+</head>
+
+<body onload="generateFaces()">
+    <h1><span>Matching - Game</span></h1>
+
+    <p><em>Click on the extra smilling face on the left.</em><br><span id="restartButton"></span></p>
+       
+    
+
+    <div id="leftSide"></div>
+    <div id="rightSide"></div>
+
+    <script>
+
+
+        let numberOfFaces = 5;
+        const theLeftSide = document.getElementById('leftSide');
+        const theRightSide = document.getElementById('rightSide');
+        let numTries = 0;
+
+
+        function generateFaces() {
+
+
+            for (let i = 0; i < numberOfFaces; i++) {
+                let face = document.createElement('img')
+                face.src = '../img/smile.png';
+                let randomTop = Math.floor(Math.random() * 400) + 1;
+                let randomLeft = Math.floor(Math.random() * 400) + 1;
+                face.style.top = randomTop + 'px';
+                face.style.left = randomLeft + 'px';
+                theLeftSide.appendChild(face);
+            }
+            const leftSideImages = theLeftSide.cloneNode(true);
+            leftSideImages.removeChild(leftSideImages.lastChild);
+            theRightSide.appendChild(leftSideImages);
+            theLeftSide.lastChild.addEventListener('click', nextLevel);
+            document.body.addEventListener('click', gameOver);
+        }
+
+        function nextLevel() {
+
+            event.stopPropagation();
+            numberOfFaces += 5;
+            while (theLeftSide.firstChild) {
+                theLeftSide.removeChild(theLeftSide.lastChild);
+            }
+            while (theRightSide.firstChild) {
+                theRightSide.removeChild(theRightSide.lastChild);
+            }
+            generateFaces('click');
+            numTries += 1;
+        }
+
+        function gameOver() {
+
+            alert('GameOver\n\nYou have completed ' + numTries + ' tries.');
+            document.body.removeEventListener('click', gameOver);
+            theLeftSide.lastChild.removeEventListener('click', nextLevel);
+            
+            let restartBtn = document.createElement('button');
+            restartBtn.innerHTML = 'Restart Game';
+            document.querySelector('#restartButton').appendChild(restartBtn);
+            restartBtn.addEventListener('click', reload);
+            restartBtn.addEventListener('mouseover', function(event){
+                event.target.style.backgroundColor='yellow';
+                event.target.style.color='green';
+            });
+            restartBtn.addEventListener('mouseleave', function(event){
+            event.target.style.backgroundColor = '';
+            event.target.style.color = '';
+            });
+        }
+            function reload() {
+                location.reload();
+            }
+        
+
+    </script>
+</body>
+
+</html>
+
