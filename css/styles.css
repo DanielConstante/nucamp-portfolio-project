@@ -316,3 +316,10 @@ color: white;
  #phoneF, #mailF {
    color: white;
  } 
+ /*--------------------------------------------------------------
+# Projects and Colaboration
+--------------------------------------------------------------*/
+#projects {
+ text-align: start;
+ align-items:flex-start
+}
