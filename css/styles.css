@@ -5,8 +5,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
-    background-image: url('../img/bg.jpg')
-    /*background-color: #0b0c10;*/
+    background-image: url('../img/bg.jpg');
+   
 }
 h2 {
     color:#16F1D4;
