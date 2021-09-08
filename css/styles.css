@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;
     background-position: center; 
     background-image: url('../img/bg.jpg');
+    
    
 }
 h2 {
@@ -226,11 +227,22 @@ h3:hover {
 }
 
 a {
-    color: white;
+  color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.projects {
+  color: #16F1D4;
+  
+  text-align: center;
+  align-items:flex-start
+ }
+
+ .projects:hover{
+  color: #fff;
+ }
 
 /*--------------------------------------------------------------
 # Resume
