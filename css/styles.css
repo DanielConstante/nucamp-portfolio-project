@@ -6,8 +6,7 @@ body {
     background-attachment: fixed;
     background-position: center; 
     background-image: url('../img/bg.jpg');
-    
-   
+    height: auto;
 }
 h2 {
     color:#16F1D4;
@@ -150,7 +149,7 @@ p {
 
 }
 
-#about, #contact, #resume, #portfolio {
+#about, #contact, #resume, #portfolio, #blog {
     display: block;
     height:100%;
     width:100%;
