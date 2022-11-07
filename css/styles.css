@@ -2,10 +2,11 @@
 
 body {
     font-family: 'BioRhyme', serif;
-    background-repeat: no-repeat;
+    background-color: #000;
+    /* background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
-    background-image: url('../img/bg.jpg');
+    /* background-position: center;  */
+    /* background-image: url('../img/bg.jpg'); */ 
     height: auto;
 }
 h2 {
@@ -312,7 +313,7 @@ color: white;
     border-color: #16F1D4;
     color: white;
     align-items: center;
-   
+   width: 280px;
 }
 
 #words:hover, #smile:hover,
