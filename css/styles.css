@@ -1,162 +1,187 @@
-
-
 body {
-    font-family: 'BioRhyme', serif;
-    background-color: #000;
-    /* background-repeat: no-repeat;
+  font-family: 'BioRhyme', serif; 
+   background-color: #000; 
+  /* background-repeat: no-repeat;
     background-attachment: fixed;
     /* background-position: center;  */
-    /* background-image: url('../img/bg.jpg'); */ 
-    height: auto;
+  /* background-image: url('../img/bg.jpg'); */
+  height: auto;
 }
+
 h2 {
-    color:#16F1D4;
-    text-align: center;
+  color: #6e40c9 !important;
+  ;
+  text-align: center;
+}
+
+header {
+  width: auto;
 }
 
 .wrapper {
-    height: 50vh;
-    /*This part is important for centering*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .typing-demo {
-    width: 34ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family:'BioRhyme', sans-serif;
-    font-size: 3em;
-    color:  #16F1D4;
-    /*color:#66fcf1;*/
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
- 
-  #emoji {
+  height: 50vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-      width: 300px;
-      height: auto;
-      
+.typing-demo {
+  width: 34ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'BioRhyme', sans-serif;
+  font-size: 3em;
+  color: #6e40c9 !important;
+  /*color:#66fcf1;*/
+}
+
+@keyframes typing {
+  from {
+    width: 0
   }
-  IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
- }
+}
 
- #welcome {
-     border-color: #16F1D4;
-     color: #16F1D4;
- }
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
 
- /*--------------------------------------------------------------
+#emoji {
+
+  width: 300px;
+  height: auto;
+
+}
+
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+#welcome {
+  width: 12rem;
+  border-color: #6e40c9 !important;
+  background-color: #6e40c9;
+  color: #ffff !important;
+  border-radius: 50rem !important;
+}
+
+#welcome:hover {
+  background: rgb(15, 6, 24);
+	background: linear-gradient(
+		322deg,
+		rgba(15, 6, 24, 1) 20%,
+		rgba(46, 19, 78, 1) 100%
+	);
+}
+
+/*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
- .navbar {
-    transition: all 0.4s;
+.navbar {
+  transition: all 0.4s;
 }
 
 .navbar .nav-link {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus,
 .navbar .navbar-brand:hover {
-    color: #16F1D4;
-    text-decoration: none;
+  color: #6e40c9 !important;
+  ;
+  text-decoration: none;
 }
 
 .navbar .navbar-brand {
-    color: #fff;
+  color: #fff;
 }
 
 /* Change navbar styling on scroll */
 .navbar.active {
 
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.active .nav-link {
-    color: #555;
+  color: #555;
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #16F1D4;
-    text-decoration: none;
+  color: #6e40c9 !important;
+  ;
+  text-decoration: none;
 }
 
-.navbar.active:hover
-.navbar-brand:hover{
-    color: #16F1D4;
+.navbar.active:hover .navbar-brand:hover {
+  color: #6e40c9 !important;
+  ;
 }
 
 .navbar.active .navbar-brand {
-    color: #555;
+  color: #555;
 }
 
 
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
-    .navbar {
-        background: #fff;
-    }
+  .navbar {
+    background: #fff;
+  }
 
-    .navbar .navbar-brand, .navbar .nav-link {
-        color: #555;
-    }
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #555;
+  }
 }
 
 .navbar-toggler {
-    color: #555;
-  }
+  color: #555;
+}
 
 .navbar-toggler:hover {
-    color: #16F1D4;
-}  
+  color: #6e40c9 !important;
+  ;
+}
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 p {
   color: white;
-    text-align: justify;
+  text-align: justify;
 }
 
 .about {
-    
-    color: white;
-    
+
+  color: white;
+
 }
 
 #aboutPic {
- width: 340px;
- height: 420px;
+  width: 340px;
+  height: 420px;
 
 }
 
-#about, #contact, #resume, #portfolio, #blog {
-    display: block;
-    height:100%;
-    width:100%;
-    padding: 60px;
-    padding-left: 120px;
-    box-sizing:border-box;
+#about,
+#contact,
+#resume,
+#portfolio,
+#blog {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+  padding-left: 120px;
+  box-sizing: border-box;
 }
 
 /*--------------------------------------------------------------
@@ -164,33 +189,34 @@ p {
 --------------------------------------------------------------*/
 
 label {
-    color: white;
+  color: white;
 }
 
 
-label:hover, .info:hover, 
-.email:hover, .phone:hover {
-    color: #16F1D4;
-}  
-  
-.form {
+label:hover,
+.info:hover,
+.email:hover,
+.phone:hover {
+  color: #6e40c9 !important;
+}
 
-    width:540px;
-    height:620px;
-    border-radius:8px;
-    box-shadow:0 0 55px -10px #16F1D4;
-    margin:calc(35vh - 220px) auto;
-    padding:20px 30px;
-    max-width:calc(90vw - 40px);
-    box-sizing:border-box;
-    position: relative;
+.form {
+  width: 540px;
+  height: 620px;
+  border-radius: 8px;
+  box-shadow: 0 0 55px -10px #6e40c9 !important;
+  margin: calc(35vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(90vw - 40px);
+  box-sizing: border-box;
+  position: relative;
 }
 
 #message {
-    border-color: #16F1D4;
-    color: #16F1D4;
-    text-align: center;
-    
+  border-color: #6e40c9 !important;
+  color: #ffff !important;
+  text-align: center;
+
 }
 
 
@@ -200,7 +226,8 @@ label:hover, .info:hover,
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 110px; /* Should be removed. Only for demonstration */
+  height: 110px;
+  /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -218,120 +245,262 @@ label:hover, .info:hover,
 }
 
 h3 {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 h3:hover {
-    color: #16F1D4;
+  color: #6e40c9 !important;
+  ;
 }
 
 a {
   color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects {
-  color: #16F1D4;
-  
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #6e40c9 !important;
   text-align: center;
-  align-items:flex-start
- }
+  align-items: flex-start;
+  padding-top: 0.5em;
+}
 
- .projects:hover{
-  color: #fff;
- }
+.projects:hover {
+  color: #ffff !important;
+}
 
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
 .resume {
-color: white;
+  color: white;
 }
 
 .resume .resume-item::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    left: -9px;
-    top: 0;
-    background: #16F1D4;
-    border: 2px solid #16F1D4;
-  }
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #6e40c9 !important;
+  ;
+  border: 2px solid #6e40c9 !important;
+  ;
+}
 
-  .resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid #16F1D4;
-    position: relative;
-  }
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #6e40c9 !important;
+  ;
+  position: relative;
+}
 
-  .resume .resume-title {
-    font-size: 26px;
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color:  #16F1D4;
-  }
-  .resume .resume-item h4 {
-    line-height: 18px;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color: white;
-    margin-bottom: 10px;
-  }
-  .resume .resume-item h5 {
-    font-size: 16px;
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  .resume .resume-item ul {
-    padding-left: 20px;
-  }
-  
-  .resume .resume-item ul li {
-    padding-bottom: 10px;
-  }
-  
-  .resume .resume-item:last-child {
-    padding-bottom: 0;
-  }
-  
-  /*--------------------------------------------------------------
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #6e40c9 !important;
+  ;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 
-  #words, #smile, #number, #personal {
-    border-color: #16F1D4;
-    color: white;
-    align-items: center;
-   width: 280px;
+#words,
+#smile,
+#number,
+#personal {
+  border-color: #6e40c9 !important;
+  background-color: rgba(46, 19, 78, 1);
+  border-radius: 1rem !important;
+  color: #ffff;
+  align-items: center;
+  width: 280px;
 }
 
-#words:hover, #smile:hover,
-#number:hover, #personal:hover {
-  color: #16F1D4;
+#words:hover,
+#smile:hover,
+#number:hover,
+#personal:hover {
+  color: #fff !important;
+  background: rgb(15, 6, 24);
+	background: linear-gradient(
+		322deg,
+		rgba(15, 6, 24, 1) 20%,
+		rgba(46, 19, 78, 1) 100%
+	);
+  /* background-color: #ffff */
+  /* background-image: linear-gradient(#8769c5, #888585); */
 }
 
 .site-footer {
-  background-image: linear-gradient(#16F1D4, black);
-  padding: 20px 0; }
+  background: rgb(15, 6, 24);
+	background: linear-gradient(
+		322deg,
+		rgba(15, 6, 24, 1) 20%,
+		rgba(46, 19, 78, 1) 100%
+	);
+  padding: 20px 0;
+}
 
- #phoneF, #mailF {
-   color: white;
- } 
- /*--------------------------------------------------------------
+#phoneF,
+#mailF {
+  color: white;
+}
+
+.footerList {
+  color: #fff;
+}
+
+.footerList:hover {
+  color: #fff;
+}
+/*--------------------------------------------------------------
 # Projects and Colaboration
 --------------------------------------------------------------*/
 #projects {
- text-align: start;
- align-items:flex-start
+  text-align: start;
+  align-items: flex-start
+}
+
+
+/*--------------------------------------------------------------
+# Loader
+--------------------------------------------------------------*/
+/*loading spinner*/
+/* Center the loader */
+
+#title {
+	display: flex;
+	justify-content: center;
+	color: #9440f5;
+	font-family: Poppins;
+	user-select: none;
+	text-shadow: 3px 3px black;
+  margin-top: 6em;
+}
+
+#title-container {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 140px;
+  height: 140px;
+  margin: -76px 0 0 -76px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #6e40c9;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+
+}
+
+@-webkit-keyframes spin {
+  0% {
+      -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+      bottom: -100px;
+      opacity: 0
+  }
+
+  to {
+      bottom: 0px;
+      opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+      bottom: -100px;
+      opacity: 0
+  }
+
+  to {
+      bottom: 0;
+      opacity: 1
+  }
+}
+
+#myDiv {
+  display: none;
 }
