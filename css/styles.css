@@ -355,7 +355,11 @@ a {
   border-radius: 1rem !important;
   color: #ffff;
   align-items: center;
-  width: 280px;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  margin: auto;
+  cursor: pointer;
 }
 
 #words:hover,
@@ -535,4 +539,96 @@ a {
 
 #myDiv {
   display: none;
+}
+
+/*--------------------------------------------------------------
+# Mac window
+--------------------------------------------------------------*/
+
+.page-wrapping {
+  margin: 20px auto;
+  position: relative;
+  background: #303030;
+  width: 320px;
+  min-height: 170px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.codewin-mac {
+  border: 1px solid #e6e6e6;
+  border: 0.5em;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.codewin-head,
+.codewin-buttons {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  align-items: center;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  justify-content: center;
+}
+
+.codewin-head {
+  background-color: #303030;
+  border-bottom: 1px solid #ae63e4;
+  height: 2rem;
+  padding: 0 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.codewin-buttons {
+  bottom: 0;
+  left: 0.5rem;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
+.btn-mac {
+  border-radius: 50%;
+  height: 0.75rem;
+  margin: 0 0.125rem;
+  width: 0.75rem;
+}
+
+.mac-close {
+  background-color: #ff5f56;
+}
+
+.mac-mini {
+  background-color: #ffbd2e;
+}
+
+.mac-full {
+  background-color: #27c93f;
+}
+.macWindow{
+  color: #fff;
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+.contentText{
+  padding: 1em;
+}
+.card-title{
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: white;
+}
+.card-content{
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  color: white;
 }
